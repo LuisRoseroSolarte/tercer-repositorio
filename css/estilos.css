@@ -1,0 +1,453 @@
+.imagen-principal{
+    width: 340px;
+    height: 300px;
+    
+}
+:root{
+    scroll-behavior:smooth;
+}
+.contenedor{
+    width:90%;
+    max-width: 1200px; 
+    overflow: hidden;
+    margin:auto;
+    padding : 60px 0;
+}
+.header{
+    height:100vh;
+    background-image: linear-gradient(to top, rgba(170, 140, 209, 0.4) 0%, rgba(251, 194, 235, 0.4) 100%),
+    url(../Imagenes/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+    background-position: center;
+}
+.header2{
+    height:100vh;
+    background-image: linear-gradient(to top, rgba(170, 140, 209, 0.4) 0%, rgba(251, 194, 235, 0.4) 100%),
+    url(../Imagenes/casa1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+    background-position: center;
+}
+.header3{
+    height:100vh;
+    background-image: linear-gradient(to top, rgba(170, 140, 209, 0.4) 0%, rgba(251, 194, 235, 0.4) 100%),
+    url(../Imagenes/SERVICOS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+    background-position: center;
+}
+
+.header4{
+    height:100vh;
+    background-image: linear-gradient(to top, rgba(170, 140, 209, 0.4) 0%, rgba(251, 194, 235, 0.4) 100%),
+    url(../Imagenes/registro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+    background-position: center;
+}
+.cont{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:black;
+    font: bold;
+}
+.menu{
+    position:fixed;
+    /*z-index: 10;*/
+    top:30px;
+    right: 30px;
+    background:white;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    border-radius:10px;
+   
+    box-shadow:0 0 6px rgba(0, 0, 0, 0.5);
+
+}
+.menu1{
+    font-size: 25px;
+    position:fixed;
+    top:0;
+    right:0;
+    width:30vw;
+    height:100%;
+    background-image:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow:1 1 6px rgba(0, 0, 0, 0.5);
+}
+
+/*header:hover .menu1{
+    transform: translate(110%);
+}*/
+.spread{
+    transform:translate(0);
+}
+.menu1 a{
+    color:#fff;
+    text-decoration:none;
+
+}
+.letrero{
+    font-size: 60px;
+    margin-bottom: 15px;
+    color:darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parrafo{
+    font-weight: 400px;
+    font-size: 25px;
+    color:yellowgreen;
+    
+}
+.parrafo1{
+    font-weight: 300px;
+    font-size: 30px; 
+    color: #764ba2;
+}
+.subtitulos{
+    text-align: center;
+    font-weight:300;
+    color: #9f8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+
+}
+.contenedor-servicio{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    
+   
+}
+.contenedor-servicio img{
+    width:40%;
+
+}
+.imagen-principal{
+    width:40%;
+}
+.principal{
+  margin-bottom: 20px;
+  
+}
+.sub-service{
+ margin-bottom: 7px;
+ color:#764ba2;
+
+}
+.sub-sevice3{
+    margin-bottom: 7px;
+ color:white;
+
+}
+.number{
+    display:inline-block;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    width:30px;
+    height:30px;
+    color:#fff;
+    text-align:center ;
+    border-radius: 50%;
+    font-weight:700px ;
+    line-height: 30px;
+    margin-right: 5px;
+    
+}
+
+.portafolio1{
+background:#f2f2f2;
+}
+.contenedor-portafolio{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.img-portafolio{
+    object-fit: cover;
+    width:30%;
+    display:block;
+    margin-bottom: 15px;
+    box-shadow:0 0 6px rgba(0,0,0, 0.5);
+    cursor:pointer;
+}
+.imagen2{
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform:translate(100%);
+    transition:transform .2 ease-in-out;
+}
+.show{
+    transform:translate(0);
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform:scale(0);
+    transition:transform .3s .2s;
+}
+.showImage{
+    transform: scale(1);
+}
+.close{
+    position:absolute;
+    top: 15px;
+    right: 15px;
+    width:40px;
+    cursor: pointer;
+
+}
+
+
+.servi{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  }
+
+.contenedor-servi {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+}
+.contenedor-servi img{
+   width: 80%;
+   display: block;
+   margin:0 auto;
+}
+
+.cont_servi2{
+    display: inline-block;
+    margin-top: 20px;
+    width:100%;
+    font-weight: 400;
+}
+footer{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+
+}
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.contact-us{
+    width:40%;
+    color:#fff;
+}
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+.brand+p{
+    font-weight: 500; 
+}
+.social-media{
+  width:50%;
+  display:flex;
+  justify-content: flex-end;
+}
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width:60px;
+    height:60px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    text-align:center ;
+    color:#fff;
+
+}
+.social-media-icon:hover{
+    background: #fff;
+    color:#764ba2;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height:60px ;
+}
+.line{
+    width:90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.portafolio{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 240px;
+
+    
+}
+
+.portafolio4{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 500px;
+
+    
+}
+
+.boton{
+  background-color:white; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: black; /* Color del texto */
+  padding: 15px 32px; /* Espaciado interno */
+  text-align: center; 
+  font-size: 16px;
+}
+.principal4{
+    box-shadow: 10px 10px 10px #aaa;
+    border-radius: 20px;
+    background-color:#764ba2;
+    padding:15px;
+
+}
+.principal-historia{
+    box-shadow: 10px 10px 10px #aaa;
+    border-radius: 20px;
+    background-color:#a18cd1;
+    padding:15px;
+}
+
+.principal2{
+    box-shadow: 10px 10px 10px #aaa;
+    border-radius: 20px;
+    background-color:#764ba2;
+    padding:15px;
+}
+.portafolio2{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 290px;
+    
+
+    
+}
+.barra{
+    background-color:rgba(0, 0, 0, 0);
+    position:fixed;
+    width: 25vw;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    height: 27px;
+    display: flex;
+    
+   }
+   .publicidad{
+    width: 100vw;
+    font-size: 22px;
+    text-align: center;
+    background-color: #a18cd1;
+    visibility: hidden;
+    transition: .3 easy all;
+   }
+
+    .publicidad.show{
+        visibility: visible;
+    }
+
+@media screen and (max-width: 800px){
+.menu1{
+    width:50vw;
+
+}
+.letrero{
+    font-size:50px;
+}
+.contenedor-servicio img{
+    width:80%;
+    margin-bottom: 40px;
+}
+.imagen-principal{
+    width:80%;
+}
+.principal{
+    margin-bottom: 30px;
+}
+.agregar-imagen{
+    width:80%;
+}
+.img-portafolio{
+    width:45%;
+}
+.contenedor-servi{
+    width:80%;
+}
+.social-media{
+    width:80%;
+    justify-content: space-evenly;
+}
+.social-media i{
+    margin-left:0;
+}
+.contenedor-footer{
+    justify-content: center;
+}
+.contact-us{
+    text-align:center;
+    width:80%;
+    margin-bottom:40px;
+}
+.boton{
+    width:70%;
+    text-align:center;
+}
+
+.publicidad{
+    width:90%;
+}
+.barra{
+    width:90%; 
+}
+
+
+};
+
